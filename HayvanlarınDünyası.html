@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang ="tr">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Hayvanların Dünyası</title>
+    <meta name="description" content="Hayvanların dünyası">
+    <meta name="keywords" content="Hayvan,nesli,tükenen,tükenmekte,olan,html,css,plc">
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+    <link rel="stylesheet" href="css\global.css">
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="proje\mobile.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="proje\tablet.css">
+    <script src="proje.js"></script>
+    
+
+    
+</head>
+<body>
+    <header class="bg-light-blue">
+      
+      <nav id ="navbar" >
+
+        <h1 class="heading-medium">Hayvanlar Alemi</h1>
+
+        <ul>
+          <li><a href="NesliTükenenHayvanlar.html">Nesli Tükenen Hayvanlar</a></li>
+          <li><a href="NesliTükenmekteOlanHayvanlar.html">Nesli Tükenmekte Olan Hayvanlar</a></li>
+          
+        </ul>
+      </nav>
+
+    </header>
+   
+   
+    <section id="home">
+      <img src="image\fox-g9c2ac1356_1920.jpg" alt="fox">
+
+      <div class="name " style="text-align: center;">
+        <h2>Hayvanlar</h2>
+        <p>Genellikle çevrelerine uyum sağlayan ve diğer canlılarla beslenen çok hücreliler âlemidir. <br>Vücutları, embriyonun bazı metamorfozlar geçirmesiyle gelişir.  	
+          Ökaryotik çok hücreli organizmalardır. Besinlerini genel olarak sindirerek alırlar.Hayvanların birçoğu hareketlidir ve bitkilerde tipik olan bulunan kalın hücre duvarları genellikle yoktur.
+          Embriyonik gelişim esnasında büyük ölçülerde hücresel göçler ve doku organizasyonları görülür. 
+         Üremeleri primer (birincil) olarak seksüeldir; diploit kromozom taşıyan dişi ve erkekler mayozla haploit kromozomlu gametleri,
+          bunlar da birleşerek diploit zigotu oluşturur.</p>
+           
+          <p>Soy tükenmesi, biyolojide ve ekolojide, bir türün veya cinsin varlığının sona ermesi, biyosferin küçülmesidir.<br> 
+            Soy tükenmesi durumu doğal evrim sürecinin bir parçasıdır.
+             Türler değiştikçe bazen yaşadıkları çevrelere daha iyi uyarlanmış ve aynı zamanda çevre tarafından değişikliğe uğratılmışlardır.
+             Bu türler varlıklarını sürdürürken, çevreye uyum sağlayamayanlar ise var olma savaşında yenik düşüp yeryüzünden silinmişlerdir
+            Soylarının tükenme sebeplerişöyle sıralanabilir:</p>
+            <ul>
+              <li>Hayvanların Habitatlarının Yok olması</li>
+              <li>İklim Değişikliliği</li>
+              <li>Çevre Kirliliği</li>
+              <li>Şehirleşme</li>
+              <li>Okyanusların Isınması</li>
+              <li>Küresel Oksijenin Azalması</li>
+              <li></li>
+              
+            </ul>
+    
+    
+            <a href="NesliTükenenHayvanlar.html" target="_blank">Nesli Tükenen Hayvanlara Git</a>
+            <a href="NesliTükenmekteOlanHayvanlar.html" target="_blank">Nesli Tükenmekte Olan Hayvanlara Git</a>
+
+            <ul></ul>
+          
+
+      </div>
+       
+     
+    </section>
+
+    <footer id="contant" class="bg-light-blue">
+      <div class="contact-from">
+        <form name="form">
+          <h4 class="text-center heading-medium">Bana Ulaşın</h4>
+
+          <div class="form-group">
+            <label for="name" onsubmit="dogrula()" >İsim</label>
+            <input type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="İsim"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="text"
+            class="form-control"
+            name="Email"
+            id="Email"
+            placeholder="Eamil"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Mesaj</label>
+            <textarea 
+             name="message" 
+             id="message"
+             class="from-control" 
+             rows="5" placeholder="Mesajınız...">
+
+            </textarea>
+          </div>
+
+        <button type="button" onclick="setTimeout(kontrol(),3000)" class="btn btn-block" >Gönder</button>
+     
+        </form>
+        <ul>
+          
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+    
+      </div>
+
+      
+    </footer>
+   
+</body>
+
+</html>
