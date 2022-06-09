@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+    <link rel="stylesheet" href="css\global.css">
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="proje\mobile.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="proje\tablet.css">
+    <script src="proje.js"></script>
+    <link rel="stylesheet" href="proje.php">
+
+
+</head>
+
+<body>
+    
+
+
+    <main>
+        <?php if ($_SERVER['REQUEST_METHOD'] === 'GET') : ?>
+            <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required="required" placeholder="İsim" />
+                </div>
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="surname" required="required" placeholder="Soyad" />
+                </div>
+
+                <div>
+                    <label for="name">Email:</label>
+                    <input type="email" name="email" required="required" placeholder="Mail" />
+                </div>
+
+                <button type="submit">Gönder</button>
+
+            </form>
+        
+    </main>
+
+
+
+</body>
+
+
+
+   
+
+
+</html>
